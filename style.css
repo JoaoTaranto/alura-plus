@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background: #00030C;
+    --text-color: #fff;
+    --blue-button: #167BF7;
+    --paragraph-color: #C0C0C0;
+}
+
+/* RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+.app-container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url(assets/background.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 130px;
+    width: 100%;
+    height: 680px;
+}
+
+.header-content {
+    max-width: 590px;
+    padding: 30px;
+    text-align: center;
+}
+
+.header-img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header-img-container img {
+    padding: 30px;
+}
+
+.btn {
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    color: var(--text-color)
+}
+.to-sign-combo {
+    background-color: var(--blue-button);
+}
+.to-sign-plus {
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+}
+.header-img-container p {
+    font-size: 12px;
+    color: var(--paragraph-color)
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+
+}
+
+.platform-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 150px;
+}
+.platform-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 590px;
+    gap: 8px;
+}
+.platform-text h2 {
+    font-size: 3rem;
+    line-height: 57px;
+}
+.platform-text p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--paragraph-color)
+}
+
+.alura-lingua-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 150px;
+}
+.alura-lingua-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 590px;
+    gap: 16px;
+}
+.alura-lingua-text h2 {
+    font-size: 3rem;
+    line-height: 57px;
+}
+.alura-lingua-text p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--paragraph-color)
+}
+
+.alura-lingua-content img {
+    order: 2;
+}
+.alura-lingua-text h2, .alura-lingua-text p {
+    order: 1
+}
+
+.course-download-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 150px;
+}
+.course-download-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 590px;
+    gap: 8px;
+}
+.course-download-text h2 {
+    font-size: 3rem;
+    line-height: 57px;
+}
+.course-download-text p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--paragraph-color)
+}
+
+.devices-content {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+.devices-content h2 {
+    margin-bottom: 50px;
+}
+
+.devices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 68px
+}
+
+.device p {
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.footer-content img {
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.item-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+.item-list a {
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    color: var(--paragraph-color);
+    max-width: 1200px;
+    text-align: center;
+}
