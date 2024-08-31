@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-image: url(assets/background.png);
+    background-image: url(../assets/background.png);
     background-size: cover;
     background-position: center;
     margin-top: 130px;
@@ -68,7 +68,7 @@ body {
     border: 1px solid var(--text-color);
 }
 .header-img-container p {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--paragraph-color)
 }
 
@@ -81,83 +81,50 @@ body {
 
 }
 
-.platform-content {
+.section-item {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 70px;
     margin-bottom: 150px;
 }
-.platform-text {
+
+.item-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 590px;
+}
+
+.item-text.platform {
     gap: 8px;
 }
-.platform-text h2 {
+.item-text h2 {
     font-size: 3rem;
     line-height: 57px;
 }
-.platform-text p {
+.item-text p {
     font-size: 0.875rem;
     font-weight: 400;
     color: var(--paragraph-color)
 }
 
-.alura-lingua-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 70px;
-    margin-bottom: 150px;
+
+.item-text.alura-lingua {
+       gap: 16px;
 }
-.alura-lingua-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 590px;
-    gap: 16px;
-}
-.alura-lingua-text h2 {
-    font-size: 3rem;
-    line-height: 57px;
-}
-.alura-lingua-text p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--paragraph-color)
-}
+
 
 .alura-lingua-content img {
     order: 2;
 }
-.alura-lingua-text h2, .alura-lingua-text p {
+.item-text.alura-lingua {
     order: 1
 }
 
-.course-download-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 70px;
-    margin-bottom: 150px;
-}
-.course-download-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 590px;
+
+.item-text.course-download {
     gap: 8px;
-}
-.course-download-text h2 {
-    font-size: 3rem;
-    line-height: 57px;
-}
-.course-download-text p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--paragraph-color)
 }
 
 .devices-content {
@@ -186,9 +153,9 @@ body {
 
 .footer-content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 30px;
     padding-bottom: 100px;
 }
